@@ -1,0 +1,7 @@
+<h1>Photos</h1>
+
+<% @photos.each do |photo| %>
+  <h3><%= photo.title %></h3>
+  <p><%= photo.description %></p>
+  <p><%= photo.tags %></p>
+<% end %>
