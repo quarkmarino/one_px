@@ -1,0 +1,21 @@
+es:
+
+  photos:
+    new:
+      new: 'Nueva %{model_name}'
+      help: 'Utilice la forma para proporcionar la informacion de su foto'
+      form_error: 'Algo no esta bien'
+
+  errors:
+    messages:
+      blank: 'Proporcione un valor'
+
+  activerecord:
+    models:
+     photo: 'Fotografia'
+
+    attributes:
+      photo:
+        title: 'titulo'
+        description: 'descripcion'
+        tags: 'etiquetas'

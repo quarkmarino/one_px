@@ -1,2 +1,26 @@
-<h2>Nueva foto</h2>
-<p>Utilice la forma para describir la informacion de la foto.</p>
+<h2><%= t '.new', model_name: @photo.class.model_name.human %></h2>
+<p><%= t '.help' %></p>
+
+<% if @photo.errors.any? %>
+  <div><%= t '.form_error' %></div>
+<% end %>
+
+<%= form_for @photo do |f| %>
+  <div>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <%= field_error @photo, :title %>
+  </div>
+  <div>
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+    <%= field_error @photo, :description %>
+  </div>
+  <div>
+    <%= f.label :tags %>
+    <%= f.text_field :tags %>
+  </div>
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>

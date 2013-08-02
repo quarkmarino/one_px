@@ -1,5 +1,7 @@
 <h1>Photos</h1>
 
+<p><%= link_to 'New photo', new_photo_path %></p>
+
 <% @photos.each do |photo| %>
   <h3><%= photo.title %></h3>
   <p><%= photo.description %></p>
