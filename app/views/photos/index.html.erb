@@ -3,7 +3,12 @@
 <p><%= link_to 'New photo', new_photo_path %></p>
 
 <% @photos.each do |photo| %>
-  <h3><%= photo.title %></h3>
-  <p><%= photo.description %></p>
-  <p><%= photo.tags %></p>
+  <div>
+    <h3><%= link_to photo.title, edit_photo_path(photo) %></h3>
+    <p><%= photo.description %></p>
+    <p><%= photo.tags %></p>
+    <div>
+      <%= image_tag photo.picture.thumb.url %>
+    </div>
+</div>
 <% end %>

@@ -1,6 +1,11 @@
 es:
 
   photos:
+    edit:
+      edit: 'Modificar %{model_name}'
+      help: 'Utilice la forma para proporcionar la informacion de su foto'
+      form_error: 'Algo no esta bien'
+
     new:
       new: 'Nueva %{model_name}'
       help: 'Utilice la forma para proporcionar la informacion de su foto'
